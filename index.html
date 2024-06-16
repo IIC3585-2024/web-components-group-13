@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello, World!</title>
+        <meta charset="utf-8"/>
+        <script defer src="item.js"></script>
+        <style>
+            /* Estilos para el contenedor de la cuadrícula */
+            .grid-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px; /* Espacio entre los elementos */
+                justify-content: space-around; /* Alinear elementos */
+                padding: 20px; /* Espaciado interior del contenedor */
+                background-color: #f0f0f0;
+            }
+    
+            /* Estilos para cada elemento de la cuadrícula */
+            .grid-item {
+                flex: 0 1 calc(33.33% - 20px); /* Cada columna ocupa el 33.33% del contenedor menos el espacio entre ellos */
+                max-width: calc(33.33% - 20px); /* Ancho máximo de cada elemento */
+                background-color: #ffffff;
+                border: 1px solid #ccc;
+                padding: 20px;
+                box-sizing: border-box; /* Incluir el padding en el ancho total */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello, World!</h1>
+        <div class="grid-container">
+            <div class="grid-item">
+                <sell-item
+                    title="hola"
+                    src="Chirumiru.png"
+                    price="5990"
+                    discount="80"
+                    rating="4.7"
+                >
+                    <button>Comprar</button>
+                </sell-item>
+            </div>
+            <div class="grid-item">
+                <sell-item
+                    title="hola"
+                    src="Milo.webp"
+                    price="5990"
+                    discount="80"
+                    rating="4.7"
+                >
+                    <button>Comprar</button>
+                </sell-item>
+            </div>
+            <div class="grid-item">
+                <sell-item
+                    title="hola3"
+                    src="Milo.webp"
+                    price="5990"
+                    discount="80"
+                    rating="4.7"
+                >
+                    <button>Comprar</button>
+                </sell-item>
+            </div>
+            <!-- Segunda fila -->
+            <div class="grid-item">
+                <sell-item
+                    title="hola3"
+                    src="Milo.webp"
+                    price="5990"
+                    discount="100"
+                    rating="4.7"
+                >
+                    <button>Comprar</button>
+                </sell-item>
+            </div>
+        </div>
+        <sell-item
+            title="hola3"
+            src="Milo.webp"
+            price="5990"
+            discount="100"
+            rating="4.7"
+        >
+            <button>Comprar</button>
+        </sell-item>
+    </body>
+</html>
