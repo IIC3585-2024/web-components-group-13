@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList Example</title>
+</head>
+<body>
+    <todo-list title="TODO 0">
+        <div slot="header">
+            <p>Tareas importantes:</p>
+        </div>
+        <div slot="footer">
+            <p>--- Hacerlo rapido ----</p>
+        </div>
+    </todo-list>
+    <todo-list title="TODO 1">
+        <div slot="header">
+            <p>Tareas no tan importantes:</p>
+        </div>
+    </todo-list>
+    <todo-list title="TODO 2">
+        <div slot="footer">
+            <p>--- Fin del todo ----</p>
+        </div>
+    </todo-list>
+    <todo-list title="TODO 3"></todo-list>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
