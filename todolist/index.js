@@ -16,7 +16,7 @@ export class TodoList extends LitElement {
       width: 10%
     }
     .todo-container {
-      max-width: 400px;
+      width: 400px;
       margin: 0 auto;
       padding: 16px;
       border: 1px solid #ddd;
